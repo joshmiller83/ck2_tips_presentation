@@ -7,3 +7,6 @@
 [submodule "plugins/fittext"]
 	path = plugins/fittext
 	url = git://github.com/davatron5000/FitText.js.git
+[submodule "plugins/slabtext"]
+	path = plugins/slabtext
+	url = git://github.com/freqdec/slabText.git

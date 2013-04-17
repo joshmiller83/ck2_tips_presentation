@@ -23,17 +23,47 @@
 	
 	<!-- Transition theme. More available in /plugins/deckjs/themes/transition/ or create your own. -->
 	<link rel="stylesheet" href="plugins/deckjs/themes/transition/fade.css">
+
+	<!-- Cool Headline CSS -->
+	<link rel="stylesheet" href="plugins/slabtext/css/slabtext.css">
 	
 	<!-- Required Modernizr file -->
 	<script src="plugins/deckjs/modernizr.custom.js"></script>
+
+	<!-- Load the Fonts -->
+	<script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Boogaloo' ] },
+		active: function() {
+			// do something
+			jQuery('.slide > .deck-slide-scaler p').slabText();
+			$(".slide").trigger("resize");
+		}
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+
+    <!-- Custom Styles -->
+    <style type="text/css">
+	.deck-container p {
+		font-family: 'Boogaloo', serif;
+	}
+    </style>
 </head>
 <body class="deck-container">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-	<h1>Boomshakalaka</h1>
-	<h2>Boom</h2>
+	<p><span class="slabtext">Responsive</span><span class="slabtext">is always</span></span><span class="slabtext">fun</span></p>
 </section>
 
 <section class="slide">
@@ -87,15 +117,15 @@
 <script src="plugins/deckjs/extensions/navigation/deck.navigation.js"></script>
 <script src="plugins/deckjs/extensions/scale/deck.scale.js"></script>
 
-<!-- FitText -->
+<!-- Cool Headlines -->
 <script src="plugins/fittext/jquery.fittext.js"></script>
-
+<script src="plugins/slabtext/js/jquery.slabtext.min.js"></script>
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
 	$(function() {
 		$.deck('.slide');
-		$('.slide').fitText();
+		//$('.slide > .deck-slide-scaler p').slabText();
 	});
 </script>
 </body>
