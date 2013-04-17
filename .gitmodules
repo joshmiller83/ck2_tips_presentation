@@ -1,0 +1,9 @@
+[submodule "plugins/deckjs"]
+	path = plugins/deckjs
+	url = git://github.com/imakewebthings/deck.js.git
+[submodule "plugins/cube"]
+	path = plugins/cube
+	url = git://github.com/mikeharris100/deck.js-transition-cube.git
+[submodule "plugins/fittext"]
+	path = plugins/fittext
+	url = git://github.com/davatron5000/FitText.js.git
