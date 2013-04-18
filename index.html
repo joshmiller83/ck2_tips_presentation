@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="plugins/deckjs/extensions/scale/deck.scale.css">
 
 	<!-- Style theme. More available in /plugins/deckjs/themes/style/ or create your own. -->
-	<link rel="stylesheet" href="plugins/deckjs/themes/style/swiss.css">
+	<link rel="stylesheet" href="css/styles.css">
 	
 	<!-- Transition theme. More available in /plugins/deckjs/themes/transition/ or create your own. -->
 	<link rel="stylesheet" href="plugins/deckjs/themes/transition/fade.css">
@@ -33,10 +33,10 @@
 	<!-- Load the Fonts -->
 	<script type="text/javascript">
       WebFontConfig = {
-        google: { families: [ 'Boogaloo' ] },
+        google: { families: [ 'Rosario', 'Antic Slab' ] },
 		active: function() {
 			// do something
-			jQuery('.slide > .deck-slide-scaler p').slabText();
+			jQuery('.slide > .deck-slide-scaler p, h1.slabme').slabText();
 			$(".slide").trigger("resize");
 		}
       };
@@ -53,21 +53,43 @@
 
     <!-- Custom Styles -->
     <style type="text/css">
-	.deck-container p {
-		font-family: 'Boogaloo', serif;
+	.deck-container .slide p {
+		font-family: "Helvetica Neue", 'Rosario', serif; /* Maven Pro */
+		font-weight: normal;
 	}
     </style>
+
+    <!-- Custom Icons from Fontello -->
+    <link rel="stylesheet" href="plugins/fontello-ad373864/css/showcase-icons.css">
+
 </head>
 <body class="deck-container">
 
 <!-- Begin slides. Just make elements with a class of slide. -->
 
 <section class="slide">
-	<p><span class="slabtext">Responsive</span><span class="slabtext">is always</span></span><span class="slabtext">fun</span></p>
+	<h1 class="vcenter"><img src="resources/kickstart-white(overbk).png" alt="Kickstart Logo" width="70%" style="margin-bottom:0" /><span>Tips & Tricks</span></h1>
+	<div class="vcenter byline">Josh Miller &nbsp;&middot;&nbsp; Commerce Guy &nbsp;&middot;&nbsp; 
+		<a href="http://www.commerceguys.com/" title="I work at Commerce Guys!"><i class="icon-cg"></i></a>
+		<a href="http://drupal.org/user/315047" title="My Drupal User :)"><i class="icon-drupal"></i></a>
+		<a href="https://twitter.com/MrJoshMiller" title="Follow Me :)"><i class="icon-twitter"></i></a>
+		<a href="https://github.com/joshmiller83/ck2_tips_presentation" title="Download the Presentation on Github"><i class="icon-github"></i></a></div>
 </section>
 
 <section class="slide">
-	<h1>Content</h1>
+	<p class="vcenter">
+		<span class="slabtext big-color">Hello there!</span>
+		<span class="slabtext small-color">I totally geeked out and</span>
+		<span class="slabtext small-color">created a deck.js presentation</span>
+		<span class="slabtext small-color">and shared it on <a href="https://github.com/joshmiller83/ck2_tips_presentation" title="Download the Presentation on Github"><i class="icon-github"></i></a></span></p>
+</section>
+
+<section class="slide">
+	<p class="vcenter">What is <a class="big-color">Commerce Kickstart 2</a>?</p>
+</section>
+
+<section class="slide">
+	<h1 class="slabme">Tips & Tricks</h1>
 </section>
 
 <section class="slide">

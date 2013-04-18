@@ -14,7 +14,7 @@
 		}
 
 		h1 {
-			color:#000;
+			color:#444;
 		}
 
 		h2 {
@@ -115,7 +115,7 @@
 	#slide-0 {
 		background: url('../resources/title-background_no_logo.png');
 		h1 {
-			color: #00ADEE;
+			color: #91d02d;
 			font-size: 2.25em;
 			top: 35%;
 			span {
@@ -143,8 +143,25 @@
 			}
 		}
 	}
+	.big-color {
+		color: #91d02d;
+	}
+	.small-color {
+		color: #888;
+	}
+	p,
+	h1.slabme {
+		margin-left: 2em;
+		margin-right: 2em;
+	}
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-	color: #000;
+	color: #444;
+}
+a:hover {
+	[class^="icon-"]:before,
+	[class*=" icon-"]:before {
+		color: #c00;
+	}
 }

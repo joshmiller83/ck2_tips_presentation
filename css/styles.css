@@ -17,7 +17,7 @@
 }
 /* line 16, ../sass/styles.scss */
 .deck-container .slide h1 {
-  color: #000;
+  color: #444;
 }
 /* line 20, ../sass/styles.scss */
 .deck-container .slide h2 {
@@ -118,7 +118,7 @@
 }
 /* line 117, ../sass/styles.scss */
 .deck-container #slide-0 h1 {
-  color: #00ADEE;
+  color: #91d02d;
   font-size: 2.25em;
   top: 35%;
 }
@@ -149,9 +149,29 @@
 .deck-container #slide-0 .byline:hover {
   opacity: 1;
 }
+/* line 146, ../sass/styles.scss */
+.deck-container .big-color {
+  color: #91d02d;
+}
+/* line 149, ../sass/styles.scss */
+.deck-container .small-color {
+  color: #888;
+}
+/* line 153, ../sass/styles.scss */
+.deck-container p,
+.deck-container h1.slabme {
+  margin-left: 2em;
+  margin-right: 2em;
+}
 
-/* line 148, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-  color: #000;
+  color: #444;
+}
+
+/* line 164, ../sass/styles.scss */
+a:hover [class^="icon-"]:before,
+a:hover [class*=" icon-"]:before {
+  color: #c00;
 }
