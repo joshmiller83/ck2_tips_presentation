@@ -1,4 +1,6 @@
-ck2_tips_presentation
+Commerce Kickstart 2 Tips & Tricks
 =====================
 
-Creating and sharing an awesome deck.js or rvl.io presentation using fittext
+I've created a deck.js slideshow with slabtext integration and used a few fontello inline icons. Enjoy!
+
+Josh
