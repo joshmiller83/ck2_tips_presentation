@@ -1,3 +1,16 @@
+/* Colors */
+$dark_grey: #444444;
+$med_grey: #888888;
+$light_grey: #cccccc;
+$red: #c00;
+$green: #91d02d;
+$blue: #00ADEE;
+
+/* Functional Colors */
+$highlight: $green;
+$lowlight: $red;
+
+
 .deck-container {
 	font-family: "Rosario", sans-serif;
 	font-size:1.75em;
@@ -7,6 +20,10 @@
 		background: url('../resources/background-WHITE.png') right bottom no-repeat;
 		background-size: 100%;
 
+		.slide {
+			background: none;
+		}
+
 		h1,
 		h2,
 		h3 {
@@ -14,24 +31,24 @@
 		}
 
 		h1 {
-			color:#444;
+			color:$dark_grey;
 		}
 
 		h2 {
-			color:#c00;
-			border-bottom-color:#ccc;
+			color:$red;
+			border-bottom-color:$light_grey;
 		}
 
 		h3 {
-			color:#888;
+			color:$med_grey;
 		}
 
 		pre {
-			border-color:#ccc;
+			border-color:$light_grey;
 		}
 
 		code {
-			color:#888;
+			color:$med_grey;
 		}
 
 		blockquote {
@@ -39,7 +56,7 @@
 			font-style:italic;
 			padding:1em 2em;
 			color:#000;
-			border-left:5px solid #ccc;
+			border-left:5px solid $light_grey;
 
 			p {
 				margin:0;
@@ -49,16 +66,16 @@
 				font-size:.5em;
 				font-style:normal;
 				font-weight:bold;
-				color:#888;
+				color:$med_grey;
 			}
 		}
 
-		::-moz-selection{ background:#c00; color:#fff; }
-		::selection { background:#c00; color:#fff; }
+		::-moz-selection{ background:$red; color:#fff; }
+		::selection { background:$red; color:#fff; }
 
 		a {
 			&, &:hover, &:focus, &:active, &:visited {
-				color:#c00;
+				color:$red;
 				text-decoration:none;
 			}
 
@@ -70,7 +87,7 @@
 	
 	> .slide {
 		.deck-before, .deck-previous {
-			opacity:0.4;
+			opacity:0.8;
 			
 			&:not(.deck-child-current) {
 				.deck-before, .deck-previous {
@@ -85,7 +102,7 @@
 	} 
 	
 	.deck-prev-link, .deck-next-link {
-		background:#ccc;
+		background:$light_grey;
 		font-family:serif; // sans-serif arrows x-browser fail
 		
 		&, &:hover, &:focus, &:active, &:visited {
@@ -93,7 +110,7 @@
 		}
 		
 		&:hover, &:focus {
-			background:#c00;
+			background:$red;
 			text-decoration:none;
 		}
 	}
@@ -115,7 +132,7 @@
 	#slide-0 {
 		background: url('../resources/title-background_no_logo.png');
 		h1 {
-			color: #91d02d;
+			color: $highlight;
 			font-size: 2.25em;
 			top: 35%;
 			span {
@@ -144,24 +161,52 @@
 		}
 	}
 	.big-color {
-		color: #91d02d;
+		color: $lowlight;
+		font-family: "Antic Slab", sans-serif;
+	}
+	.big-thin {
+		font-weight: 300;
 	}
 	.small-color {
-		color: #888;
+		color: $med_grey;
 	}
 	p,
 	h1.slabme {
 		margin-left: 2em;
 		margin-right: 2em;
+		.slide {
+			font-weight: bold;
+		}
+		.big-thin {
+			font-weight: 300;
+		}
+	}
+	p.half-column {
+		width: 45%;
+		float: left;
+		margin: 0;
+		&.last {
+			float: right;
+		}
+	}
+	.tip-number {
+		margin: 2em -48px;
+		background: #000;
+		color: $highlight;
+		text-align: center;
+		padding: .7em 0;
+		background: url('../resources/title-background_no_logo.png') left -14em no-repeat;
+		background-size: 100%;
+		font-weight: 900;
 	}
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-	color: #444;
+	color: $dark_grey;
 }
 a:hover {
 	[class^="icon-"]:before,
 	[class*=" icon-"]:before {
-		color: #c00;
+		color: $red;
 	}
 }
