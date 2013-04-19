@@ -87,7 +87,7 @@ $lowlight: $red;
 	
 	> .slide {
 		.deck-before, .deck-previous {
-			opacity:0.8;
+			/*opacity:0.8;*/
 			
 			&:not(.deck-child-current) {
 				.deck-before, .deck-previous {
@@ -198,6 +198,35 @@ $lowlight: $red;
 		background: url('../resources/title-background_no_logo.png') left -14em no-repeat;
 		background-size: 100%;
 		font-weight: 900;
+	}
+	.fixed-two-col {
+		height: 8em;  
+		position: relative;
+		margin-bottom: 1em;
+		img {
+			margin: 0;
+			display: inline-block;
+		}
+		.left-bottom,
+		.right-bottom,
+		.left-middle {
+			position: absolute;
+			font-size: 180%;
+			bottom: 0;
+			width: 45%; 
+			text-align: center;
+		}
+		.left-bottom {
+			left: 0; 
+		}
+		.left-middle {
+			left: 48%; 
+			width: auto; 
+			font-style: italic;
+		}
+		.right-bottom {
+			right: 0;
+		}
 	}
 }
 [class^="icon-"]:before,

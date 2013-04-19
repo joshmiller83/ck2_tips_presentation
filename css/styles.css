@@ -82,7 +82,7 @@
 }
 /* line 89, ../sass/styles.scss */
 .deck-container > .slide .deck-before, .deck-container > .slide .deck-previous {
-  opacity: 0.8;
+  /*opacity:0.8;*/
 }
 /* line 93, ../sass/styles.scss */
 .deck-container > .slide .deck-before:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-before:not(.deck-child-current) .deck-previous, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-previous {
@@ -205,14 +205,49 @@
   background-size: 100%;
   font-weight: 900;
 }
+/* line 202, ../sass/styles.scss */
+.deck-container .fixed-two-col {
+  height: 8em;
+  position: relative;
+  margin-bottom: 1em;
+}
+/* line 206, ../sass/styles.scss */
+.deck-container .fixed-two-col img {
+  margin: 0;
+  display: inline-block;
+}
+/* line 212, ../sass/styles.scss */
+.deck-container .fixed-two-col .left-bottom,
+.deck-container .fixed-two-col .right-bottom,
+.deck-container .fixed-two-col .left-middle {
+  position: absolute;
+  font-size: 180%;
+  bottom: 0;
+  width: 45%;
+  text-align: center;
+}
+/* line 219, ../sass/styles.scss */
+.deck-container .fixed-two-col .left-bottom {
+  left: 0;
+}
+/* line 222, ../sass/styles.scss */
+.deck-container .fixed-two-col .left-middle {
+  left: 48%;
+  width: auto;
+  font-style: italic;
+}
+/* line 227, ../sass/styles.scss */
+.deck-container .fixed-two-col .right-bottom {
+  right: 0;
+}
 
-/* line 204, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   color: #444444;
 }
 
-/* line 209, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 a:hover [class^="icon-"]:before,
 a:hover [class*=" icon-"]:before {
   color: #cc0000;
