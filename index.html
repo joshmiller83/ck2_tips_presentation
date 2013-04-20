@@ -62,6 +62,10 @@
     <!-- Custom Icons from Fontello -->
     <link rel="stylesheet" href="plugins/fontello-ad373864/css/showcase-icons.css">
 
+    <!-- Countdown -->
+    <link rel="stylesheet" type="text/css" href="plugins/countdown/css/countdown.min.css">
+    <script type="text/javascript" src="plugins/countdown/js/countdown.min.js"></script>
+
 </head>
 <body class="deck-container">
 
@@ -86,7 +90,7 @@
 
 <section class="slide">
 	<p class="vcenter">
-		<span class="slabtext big-color slide">What is Commerce Kickstart 2?</span>
+		<span class="slabtext big-color">What is Commerce Kickstart 2?</span>
 		<span class="slabtext slide">Demo Store with Content</span>
 		<span class="slabtext slide">Development Tool with Fancy Store Admin Features</span>
 		<span class="slabtext big-thin slide">Distribution</span>
@@ -143,15 +147,17 @@
 		<div class="left-middle">and</div>
 		<div class="right-bottom"><img src="resources/product_displays.png" /><br />Product Displays</div>
 	</div>
-	<p class="slide big-color">are different</p>
+	<p class="slide big-color big-thin">are different&trade;</p>
 
 </section>
 
 <section class="slide">
 	<div class="tip-number">Tip #005</div>
-	<p>
-		<span class="slabtext">Allow customers to register</span>
-		<span class="slabtext">using Social Media</span></p>
+	<div class="slide half-column" style="width: 35%"><img src="resources/socially_akward.jpg" /></div>
+	<p class="slide half-column last" style="width: 65%">
+		<span class="slabtext">Enable Customers</span>
+		<span class="slabtext">to register using</span>
+		<span class="slabtext big-color">Social Media</span></p>
 
 </section>
 
@@ -168,6 +174,17 @@
 	<p><span class="slabtext">Become a hero by using the</span>
 		<span class="slabtext big-color">Service Providers</span></p>
 	<img src="resources/ck2_service_providers.jpg" width="80%" style="margin: 0 auto;" />
+
+</section>
+
+<section class="slide">
+	<img src="resources/want_more_tips.jpg" alt="Not sure..." width="60%" class="vcenter" />
+</section>
+
+<section class="slide">
+	<p class="vcenter"><span class="slabtext">Want more Commerce Kickstart Tips?</span>
+		<span class="slabtext big-color">Install Kickstart</span>
+		<span class="slabtext big-thin"><a href="https://twitter.com/MrJoshMiller" title="Follow Me :)"><i class="icon-twitter"></i></a> @MrJoshMiller</span></p>
 
 </section>
 
@@ -191,6 +208,14 @@
 <!-- deck.hash snippet -->
 <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
 
+<!-- Countdown -->
+<div id="countdown">
+	<div class="time" id="days"></div>
+	<div class="time" id="hours"></div>
+	<div class="time" id="mins"></div>
+	<div class="time" id="secs"></div>
+</div>
+
 <!-- End extension snippets. -->
 
 
@@ -210,6 +235,13 @@
 <!-- Cool Headlines -->
 <script src="plugins/fittext/jquery.fittext.js"></script>
 <script src="plugins/slabtext/js/jquery.slabtext.min.js"></script>
+
+<!-- Countdown -->
+<script type="text/javascript">
+	var countdown = new Countdown(2013, 4, 20, 16, 50);
+    countdown.startCountdown();
+    countdown.setMessage("Start Q&A!");
+</script>
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>

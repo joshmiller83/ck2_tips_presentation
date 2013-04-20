@@ -10,3 +10,6 @@
 [submodule "plugins/slabtext"]
 	path = plugins/slabtext
 	url = git://github.com/freqdec/slabText.git
+[submodule "plugins/countdown"]
+	path = plugins/countdown
+	url = git://github.com/philbuchanan/Countdown.git

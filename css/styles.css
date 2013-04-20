@@ -185,13 +185,13 @@
   font-weight: 300;
 }
 /* line 184, ../sass/styles.scss */
-.deck-container p.half-column {
+.deck-container .half-column {
   width: 45%;
   float: left;
   margin: 0;
 }
 /* line 188, ../sass/styles.scss */
-.deck-container p.half-column.last {
+.deck-container .half-column.last {
   float: right;
 }
 /* line 192, ../sass/styles.scss */
@@ -251,4 +251,30 @@
 a:hover [class^="icon-"]:before,
 a:hover [class*=" icon-"]:before {
   color: #cc0000;
+}
+
+/* line 242, ../sass/styles.scss */
+#countdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  z-index: 9999;
+  color: #cccccc;
+}
+/* line 249, ../sass/styles.scss */
+#countdown #days {
+  display: none;
+}
+/* line 252, ../sass/styles.scss */
+#countdown #secs {
+  display: none;
+}
+/* line 255, ../sass/styles.scss */
+#countdown .message {
+  color: #FFF;
+  background: #cc0000;
+  padding: 20px;
+  margin: 0;
+  font-size: 200%;
 }

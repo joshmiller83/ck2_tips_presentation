@@ -181,7 +181,7 @@ $lowlight: $red;
 			font-weight: 300;
 		}
 	}
-	p.half-column {
+	.half-column {
 		width: 45%;
 		float: left;
 		margin: 0;
@@ -189,7 +189,7 @@ $lowlight: $red;
 			float: right;
 		}
 	}
-	.tip-number {
+	.tip-number { 
 		margin: 2em -48px;
 		background: #000;
 		color: $highlight;
@@ -237,5 +237,26 @@ a:hover {
 	[class^="icon-"]:before,
 	[class*=" icon-"]:before {
 		color: $red;
+	}
+}
+#countdown { 
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: auto;
+	z-index: 9999;
+	color: $light_grey;
+	#days {
+		display: none;
+	}
+	#secs {
+		display: none;
+	}
+	.message {
+		color: #FFF;
+		background: $red;
+		padding: 20px;
+		margin: 0;
+		font-size: 200%;
 	}
 }
