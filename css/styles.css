@@ -1,0 +1,280 @@
+/* Colors */
+/* Functional Colors */
+/* line 14, ../sass/styles.scss */
+.deck-container {
+  font-family: "Rosario", sans-serif;
+  font-size: 1.75em;
+  background: none;
+}
+/* line 19, ../sass/styles.scss */
+.deck-container .slide {
+  background: url("../resources/background-WHITE.png") right bottom no-repeat;
+  background-size: 100%;
+}
+/* line 23, ../sass/styles.scss */
+.deck-container .slide .slide {
+  background: none;
+}
+/* line 29, ../sass/styles.scss */
+.deck-container .slide h1,
+.deck-container .slide h2,
+.deck-container .slide h3 {
+  font-family: "Antic Slab", sans-serif;
+}
+/* line 33, ../sass/styles.scss */
+.deck-container .slide h1 {
+  color: #444444;
+}
+/* line 37, ../sass/styles.scss */
+.deck-container .slide h2 {
+  color: #cc0000;
+  border-bottom-color: #cccccc;
+}
+/* line 42, ../sass/styles.scss */
+.deck-container .slide h3 {
+  color: #888888;
+}
+/* line 46, ../sass/styles.scss */
+.deck-container .slide pre {
+  border-color: #cccccc;
+}
+/* line 50, ../sass/styles.scss */
+.deck-container .slide code {
+  color: #888888;
+}
+/* line 54, ../sass/styles.scss */
+.deck-container .slide blockquote {
+  font-size: 2em;
+  font-style: italic;
+  padding: 1em 2em;
+  color: #000;
+  border-left: 5px solid #cccccc;
+}
+/* line 61, ../sass/styles.scss */
+.deck-container .slide blockquote p {
+  margin: 0;
+}
+/* line 65, ../sass/styles.scss */
+.deck-container .slide blockquote cite {
+  font-size: .5em;
+  font-style: normal;
+  font-weight: bold;
+  color: #888888;
+}
+/* line 73, ../sass/styles.scss */
+.deck-container .slide ::-moz-selection {
+  background: #cc0000;
+  color: #fff;
+}
+/* line 74, ../sass/styles.scss */
+.deck-container .slide ::selection {
+  background: #cc0000;
+  color: #fff;
+}
+/* line 77, ../sass/styles.scss */
+.deck-container .slide a, .deck-container .slide a:hover, .deck-container .slide a:focus, .deck-container .slide a:active, .deck-container .slide a:visited {
+  color: #cc0000;
+  text-decoration: none;
+}
+/* line 82, ../sass/styles.scss */
+.deck-container .slide a:hover, .deck-container .slide a:focus {
+  text-decoration: underline;
+}
+/* line 89, ../sass/styles.scss */
+.deck-container > .slide .deck-before, .deck-container > .slide .deck-previous {
+  /*opacity:0.8;*/
+}
+/* line 93, ../sass/styles.scss */
+.deck-container > .slide .deck-before:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-before:not(.deck-child-current) .deck-previous, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-before, .deck-container > .slide .deck-previous:not(.deck-child-current) .deck-previous {
+  opacity: 1;
+}
+/* line 99, ../sass/styles.scss */
+.deck-container > .slide .deck-child-current {
+  opacity: 1;
+}
+/* line 104, ../sass/styles.scss */
+.deck-container .deck-prev-link, .deck-container .deck-next-link {
+  background: #cccccc;
+  font-family: serif;
+}
+/* line 108, ../sass/styles.scss */
+.deck-container .deck-prev-link, .deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-prev-link:active, .deck-container .deck-prev-link:visited, .deck-container .deck-next-link, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus, .deck-container .deck-next-link:active, .deck-container .deck-next-link:visited {
+  color: #fff;
+}
+/* line 112, ../sass/styles.scss */
+.deck-container .deck-prev-link:hover, .deck-container .deck-prev-link:focus, .deck-container .deck-next-link:hover, .deck-container .deck-next-link:focus {
+  background: #cc0000;
+  text-decoration: none;
+}
+/* line 118, ../sass/styles.scss */
+.deck-container .deck-status {
+  font-size: 0.6666em;
+}
+/* line 123, ../sass/styles.scss */
+.deck-container.deck-menu .slide {
+  background: #eee;
+}
+/* line 127, ../sass/styles.scss */
+.deck-container.deck-menu .deck-current, .no-touch .deck-container.deck-menu .slide:hover {
+  background: #ddf;
+}
+/* line 132, ../sass/styles.scss */
+.deck-container #slide-0 {
+  background: url("../resources/title-background_no_logo.png");
+}
+/* line 134, ../sass/styles.scss */
+.deck-container #slide-0 h1 {
+  color: #91d02d;
+  font-size: 2.25em;
+  top: 35%;
+}
+/* line 138, ../sass/styles.scss */
+.deck-container #slide-0 h1 span {
+  display: block;
+  border-top: 1px solid #FFF;
+  padding-top: .7em;
+  margin: 0 3em;
+}
+/* line 145, ../sass/styles.scss */
+.deck-container #slide-0 .byline {
+  position: absolute;
+  bottom: 1em;
+  top: inherit;
+  color: #FFF;
+  font-weight: normal;
+  opacity: 0.7;
+}
+/* line 154, ../sass/styles.scss */
+.deck-container #slide-0 .byline a,
+.deck-container #slide-0 .byline [class^="icon-"]:before,
+.deck-container #slide-0 .byline [class*=" icon-"]:before {
+  color: #FFF;
+  text-decoration: none;
+}
+/* line 158, ../sass/styles.scss */
+.deck-container #slide-0 .byline:hover {
+  opacity: 1;
+}
+/* line 163, ../sass/styles.scss */
+.deck-container .big-color {
+  color: #cc0000;
+  font-family: "Antic Slab", sans-serif;
+}
+/* line 167, ../sass/styles.scss */
+.deck-container .big-thin {
+  font-weight: 300;
+}
+/* line 170, ../sass/styles.scss */
+.deck-container .small-color {
+  color: #888888;
+}
+/* line 174, ../sass/styles.scss */
+.deck-container p,
+.deck-container h1.slabme {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+/* line 177, ../sass/styles.scss */
+.deck-container p .slide,
+.deck-container h1.slabme .slide {
+  font-weight: bold;
+}
+/* line 180, ../sass/styles.scss */
+.deck-container p .big-thin,
+.deck-container h1.slabme .big-thin {
+  font-weight: 300;
+}
+/* line 184, ../sass/styles.scss */
+.deck-container .half-column {
+  width: 45%;
+  float: left;
+  margin: 0;
+}
+/* line 188, ../sass/styles.scss */
+.deck-container .half-column.last {
+  float: right;
+}
+/* line 192, ../sass/styles.scss */
+.deck-container .tip-number {
+  margin: 2em -48px;
+  background: #000;
+  color: #91d02d;
+  text-align: center;
+  padding: .7em 0;
+  background: url("../resources/title-background_no_logo.png") left -14em no-repeat;
+  background-size: 100%;
+  font-weight: 900;
+}
+/* line 202, ../sass/styles.scss */
+.deck-container .fixed-two-col {
+  height: 8em;
+  position: relative;
+  margin-bottom: 1em;
+}
+/* line 206, ../sass/styles.scss */
+.deck-container .fixed-two-col img {
+  margin: 0;
+  display: inline-block;
+}
+/* line 212, ../sass/styles.scss */
+.deck-container .fixed-two-col .left-bottom,
+.deck-container .fixed-two-col .right-bottom,
+.deck-container .fixed-two-col .left-middle {
+  position: absolute;
+  font-size: 180%;
+  bottom: 0;
+  width: 45%;
+  text-align: center;
+}
+/* line 219, ../sass/styles.scss */
+.deck-container .fixed-two-col .left-bottom {
+  left: 0;
+}
+/* line 222, ../sass/styles.scss */
+.deck-container .fixed-two-col .left-middle {
+  left: 48%;
+  width: auto;
+  font-style: italic;
+}
+/* line 227, ../sass/styles.scss */
+.deck-container .fixed-two-col .right-bottom {
+  right: 0;
+}
+
+/* line 233, ../sass/styles.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  color: #444444;
+}
+
+/* line 238, ../sass/styles.scss */
+a:hover [class^="icon-"]:before,
+a:hover [class*=" icon-"]:before {
+  color: #cc0000;
+}
+
+/* line 242, ../sass/styles.scss */
+#countdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  z-index: 9999;
+  color: #cccccc;
+}
+/* line 249, ../sass/styles.scss */
+#countdown #days {
+  display: none;
+}
+/* line 252, ../sass/styles.scss */
+#countdown #secs {
+  display: none;
+}
+/* line 255, ../sass/styles.scss */
+#countdown .message {
+  color: #FFF;
+  background: #cc0000;
+  padding: 20px;
+  margin: 0;
+  font-size: 200%;
+}

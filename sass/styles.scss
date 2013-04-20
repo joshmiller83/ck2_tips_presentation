@@ -1,0 +1,262 @@
+/* Colors */
+$dark_grey: #444444;
+$med_grey: #888888;
+$light_grey: #cccccc;
+$red: #c00;
+$green: #91d02d;
+$blue: #00ADEE;
+
+/* Functional Colors */
+$highlight: $green;
+$lowlight: $red;
+
+
+.deck-container {
+	font-family: "Rosario", sans-serif;
+	font-size:1.75em;
+	background: none;
+	
+	.slide {
+		background: url('../resources/background-WHITE.png') right bottom no-repeat;
+		background-size: 100%;
+
+		.slide {
+			background: none;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-family: "Antic Slab", sans-serif;
+		}
+
+		h1 {
+			color:$dark_grey;
+		}
+
+		h2 {
+			color:$red;
+			border-bottom-color:$light_grey;
+		}
+
+		h3 {
+			color:$med_grey;
+		}
+
+		pre {
+			border-color:$light_grey;
+		}
+
+		code {
+			color:$med_grey;
+		}
+
+		blockquote {
+			font-size:2em;
+			font-style:italic;
+			padding:1em 2em;
+			color:#000;
+			border-left:5px solid $light_grey;
+
+			p {
+				margin:0;
+			}
+
+			cite {
+				font-size:.5em;
+				font-style:normal;
+				font-weight:bold;
+				color:$med_grey;
+			}
+		}
+
+		::-moz-selection{ background:$red; color:#fff; }
+		::selection { background:$red; color:#fff; }
+
+		a {
+			&, &:hover, &:focus, &:active, &:visited {
+				color:$red;
+				text-decoration:none;
+			}
+
+			&:hover, &:focus {
+				text-decoration:underline;
+			}
+		}
+	}
+	
+	> .slide {
+		.deck-before, .deck-previous {
+			/*opacity:0.8;*/
+			
+			&:not(.deck-child-current) {
+				.deck-before, .deck-previous {
+					opacity:1;
+				}
+			}
+		}
+		
+		.deck-child-current {
+			opacity:1;
+		}
+	} 
+	
+	.deck-prev-link, .deck-next-link {
+		background:$light_grey;
+		font-family:serif; // sans-serif arrows x-browser fail
+		
+		&, &:hover, &:focus, &:active, &:visited {
+			color:#fff;
+		}
+		
+		&:hover, &:focus {
+			background:$red;
+			text-decoration:none;
+		}
+	}
+	
+	.deck-status {
+		font-size:0.6666em;
+	}
+	
+	&.deck-menu {
+		.slide {
+			background:#eee;
+		}
+		
+		.deck-current, .no-touch & .slide:hover {
+			background:#ddf;
+		}
+	}
+
+	#slide-0 {
+		background: url('../resources/title-background_no_logo.png');
+		h1 {
+			color: $highlight;
+			font-size: 2.25em;
+			top: 35%;
+			span {
+				display: block;
+				border-top: 1px solid #FFF;
+				padding-top: .7em;
+				margin: 0 3em;
+			}
+		}
+		.byline {
+			position: absolute;
+			bottom: 1em;
+			top: inherit;
+			color: #FFF;
+			font-weight: normal;
+			opacity: 0.7;
+			a,
+			[class^="icon-"]:before,
+			[class*=" icon-"]:before {
+				color: #FFF;
+				text-decoration: none;
+			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.big-color {
+		color: $lowlight;
+		font-family: "Antic Slab", sans-serif;
+	}
+	.big-thin {
+		font-weight: 300;
+	}
+	.small-color {
+		color: $med_grey;
+	}
+	p,
+	h1.slabme {
+		margin-left: 2em;
+		margin-right: 2em;
+		.slide {
+			font-weight: bold;
+		}
+		.big-thin {
+			font-weight: 300;
+		}
+	}
+	.half-column {
+		width: 45%;
+		float: left;
+		margin: 0;
+		&.last {
+			float: right;
+		}
+	}
+	.tip-number { 
+		margin: 2em -48px;
+		background: #000;
+		color: $highlight;
+		text-align: center;
+		padding: .7em 0;
+		background: url('../resources/title-background_no_logo.png') left -14em no-repeat;
+		background-size: 100%;
+		font-weight: 900;
+	}
+	.fixed-two-col {
+		height: 8em;  
+		position: relative;
+		margin-bottom: 1em;
+		img {
+			margin: 0;
+			display: inline-block;
+		}
+		.left-bottom,
+		.right-bottom,
+		.left-middle {
+			position: absolute;
+			font-size: 180%;
+			bottom: 0;
+			width: 45%; 
+			text-align: center;
+		}
+		.left-bottom {
+			left: 0; 
+		}
+		.left-middle {
+			left: 48%; 
+			width: auto; 
+			font-style: italic;
+		}
+		.right-bottom {
+			right: 0;
+		}
+	}
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	color: $dark_grey;
+}
+a:hover {
+	[class^="icon-"]:before,
+	[class*=" icon-"]:before {
+		color: $red;
+	}
+}
+#countdown { 
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: auto;
+	z-index: 9999;
+	color: $light_grey;
+	#days {
+		display: none;
+	}
+	#secs {
+		display: none;
+	}
+	.message {
+		color: #FFF;
+		background: $red;
+		padding: 20px;
+		margin: 0;
+		font-size: 200%;
+	}
+}
